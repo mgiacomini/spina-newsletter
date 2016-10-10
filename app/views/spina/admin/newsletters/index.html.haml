@@ -1,0 +1,20 @@
+.table-container
+  %table.table
+    %thead
+      %tr
+        %th Name
+        %th E-mail
+
+    %tbody
+      - if @newslleters.any?
+        - @newslleters.each do |newslleter|
+          %tr
+            %td.nowrap
+              = newslleter.name
+              %small= time_ago_in_words(newslleter.created_at)
+            %td
+              = newslleter.email
+      - else
+        %tr
+          %td.align-center{colspan: 4}
+            %em No users sign up the newsletter yet!
