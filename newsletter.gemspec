@@ -6,7 +6,7 @@ require "spina/newsletter/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "spina-newsletter"
-  s.version     = Spina::Reviews::VERSION
+  s.version     = Spina::Newsletter::VERSION
   s.authors     = ["Mauricio Giacomini Girardello"]
   s.email       = ["mauriciogiacomini4@gmail.com"]
   s.summary     = "Newsletter system for Spina"
